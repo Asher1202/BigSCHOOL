@@ -4,6 +4,45 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+.navbar-inverse{
+    background-color:red;
+    border-color:white;
+
+}
+.navbar-inverse.navbar-nav{
+    color:white;
+}
+.navbar-inverse.navbar-brand{
+    color:white;
+}
+.test{list-style:none;}
+.test > li {
+    position: relative;
+    margin-bottom: 30px
+}
+.test li .date {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    width: 60px;
+    height: 80px;
+    text-align:center;
+    background-color: red ;
+    color: white;
+
+
+}
+.test li .details{
+    position:absolute;
+    top:0;
+    padding-top: 0em;
+    left:70px;
+}
+
+li {
+  
+}
+
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -17,4 +56,7 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+.nav navbar-nav navbar-right {
+   
 }

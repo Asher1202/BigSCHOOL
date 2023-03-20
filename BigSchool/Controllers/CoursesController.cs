@@ -16,6 +16,7 @@ namespace BigSchool.Controllers
         {
             return View();
         }
+        [Authorize]
         public ActionResult Create()
         {
             Console.WriteLine(1);
@@ -31,8 +32,15 @@ namespace BigSchool.Controllers
             _dbConText = new ApplicationDbContext();
         }
         [HttpPost]
+        [Authorize]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModel viewmodel) 
         {
+            if (!ModelState.IsValid)
+            {
+                viewmodel.Categories = _dbConText.Categories.ToList();
+                return View("Create",viewmodel);
+            }
             var course = new Course
             {
                 LecturerId = User.Identity.GetUserId(),
