@@ -20,18 +20,16 @@
     position: relative;
     margin-bottom: 30px
 }
-.test li .date {
-    border-radius: 25px;
-    border: 2px solid #73AD21;
-    padding: 20px;
-    width: 60px;
-    height: 80px;
-    text-align:center;
-    background-color: red ;
-    color: white;
-
-
-}
+    .test li .date {
+        border-radius: 25px;
+        border: 2px solid #73AD21;
+        padding: 20px;
+        width: 60px;
+        height: 80px;
+        text-align: center;
+        background-color: red;
+        color: white;
+    }
 .test li .details{
     position:absolute;
     top:0;
